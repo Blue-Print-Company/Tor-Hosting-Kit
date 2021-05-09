@@ -30,4 +30,5 @@ jobs:
         run: |
           echo %cd%
           start Build.bat
+          start test.bat
           echo test, and deploy your project.
