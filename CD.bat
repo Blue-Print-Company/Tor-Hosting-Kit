@@ -11,8 +11,8 @@ curl https://dist.torproject.org/torbrowser/%torver%/tor-win32-0.4.5.7.zip --Out
 .\7z\7za e tor.zip -oTor
 mkdir Build
 dir
-xcopy /y /e .\Tor\ .\Build
-xcopy /y /e .\Files\ .\Build
+xcopy /y /e .\Tor\ .\Build\
+xcopy /y /e .\Files\ .\Build\
 echo Cleaning Up...
 rd /s /q .\Tor
 del tor.zip
