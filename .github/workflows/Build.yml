@@ -8,6 +8,7 @@ jobs:
       - name: Building
         shell: cmd
         run: |
+          echo test
           build.bat 10.0.16
           echo Phrase 1 Done
           .\7z\7za a -tzip Build.zip .\Build -y
