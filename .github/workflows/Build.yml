@@ -3,11 +3,12 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: shell: cmd
-      - run: build.bat 10.0.16
-      - run: .\7z\7za a -tzip Build.zip .\Build -y
-      - uses: svenstaro/upload-release-action@v2
+      - name: Build
+        uses: actions/checkout@v2
+        run: build.bat 10.0.16
+        run: .\7z\7za a -tzip Build.zip .\Build -y
+        shell: cmd
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: Build.zip
