@@ -16,9 +16,9 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: Build.zip
           asset_name: Build.zip
-          tag: Stable
+          tag: Auto Release
           overwrite: true
-          body: "Auto Release"
+          body: "Automatic Release"
 
   test:
     runs-on: windows-latest
