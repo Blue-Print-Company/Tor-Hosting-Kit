@@ -8,11 +8,8 @@ jobs:
       - name: Building
         shell: cmd
         run: |
-          echo test
-          build.bat 10.0.16
-          echo Phrase 1 Done
-          .\7z\7za a -tzip Build.zip .\Build -y
-          echo Phrase 2 Done
+          CD.bat 10.0.16
+          echo Done
       - name: Upload
         uses: svenstaro/upload-release-action@v2
         with:

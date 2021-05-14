@@ -17,4 +17,4 @@ rd /s /q .\Tor
 del tor.zip
 echo Complete
 
-set torver=
+set torver=pause
