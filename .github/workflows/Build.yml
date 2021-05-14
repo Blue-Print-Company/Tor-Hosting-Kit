@@ -16,7 +16,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: Build.zip
           asset_name: Build.zip
-          tag: Auto-Release
+          tag: Current
           overwrite: true
           body: "Automatic Release"
 
