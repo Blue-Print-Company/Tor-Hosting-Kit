@@ -9,6 +9,7 @@ jobs:
         shell: cmd
         run: |
           start build.bat 10.0.16
+          timeout 20
           dir
           .\7z\7za a -tzip Build.zip .\Build -y
       - name: Upload
