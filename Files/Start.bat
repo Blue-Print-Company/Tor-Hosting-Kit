@@ -1,3 +1,3 @@
 @echo off
-start tor.exe -f .\torrc
+nircmd exec hide tor.exe -f .\torrc
 timeout 5

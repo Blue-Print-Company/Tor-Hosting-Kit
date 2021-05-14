@@ -1,16 +1,21 @@
 @echo off
 echo Tor Host Service Builder
-echo Check is this the working directory:
-echo %cd%
-echo Deleting old build... (Ignore Errors)
+if [%1]==[] (set /p torver=Enter Tor Version:) else (set torver=%1)
+echo Deleting Old Builds...(Ignore Errors)
 rd /s /q .\Build
-set /p torloc=Enter Tor Location:
+rd /s /q .\Tor
+del tor.zip
+echo Done
+echo Downloading Tor Release...
+curl https://dist.torproject.org/torbrowser/%torver%/tor-win32-0.4.5.7.zip --Output tor.zip
+.\7z\7za e tor.zip -oTor
 mkdir Build
-echo %torloc%\Browser\TorBrowser\Tor\
-xcopy /y /e %torloc%\Browser\TorBrowser\Tor\ .\Build
+xcopy /y /e .\Tor\ .\Build
 xcopy /y /e .\Files\ .\Build
+echo Cleaning Up...
+rd /s /q .\Tor
+del tor.zip
 echo Complete
 
-set torloc=
-set torcd=
+set torver=
 pause
