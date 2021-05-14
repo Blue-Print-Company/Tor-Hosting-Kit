@@ -4,7 +4,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - run: build.bat 10.0.16
+      - run: start build.bat 10.0.16
       - run: .\7z\7za a -tzip Build.zip .\Build -y
       - uses: svenstaro/upload-release-action@v2
         with:
