@@ -18,4 +18,3 @@ del tor.zip
 echo Complete
 
 set torver=
-pause
