@@ -3,7 +3,7 @@
 
 ## Installing
 ### Go here and download:
-### [Releases](https://github.com/Blue-Print-Company/Tor-Hosting-Kit/releases)
+### [Latest Release](https://github.com/Blue-Print-Company/Tor-Hosting-Kit/releases/latest)
 ### Extract
 ### Start.bat to start
 ### Stop.exe to stop
