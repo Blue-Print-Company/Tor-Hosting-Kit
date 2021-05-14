@@ -7,9 +7,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Cmd
         shell: cmd
-        run: start build.bat 10.0.16
-        run: dir
-        run: .\7z\7za a -tzip Build.zip .\Build -y
+        run: |
+          start build.bat 10.0.16
+          dir
+          .\7z\7za a -tzip Build.zip .\Build -y
       - name: Upload
         uses: svenstaro/upload-release-action@v2
         with:
