@@ -16,7 +16,6 @@ xcopy /y /e .\Files .\Build
 echo Cleaning Up...
 rd /s /q .\Tor
 del tor.zip
-.\7z\7za a -tzip Build.zip .\Build -y
 echo Complete
 
 set torver=
