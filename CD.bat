@@ -9,7 +9,7 @@ echo Done
 echo Downloading Tor Release...
 curl https://dist.torproject.org/torbrowser/%torver%/tor-win32-0.4.5.7.zip --Output tor.zip
 .\7z\7za e tor.zip -oTor
-mkdir Build
+mkdir Tor_Hosting_Kit
 dir
 xcopy /y /e .\Tor .\Tor_Hosting_Kit\
 xcopy /y /e .\Files .\Tor_Hosting_Kit\
