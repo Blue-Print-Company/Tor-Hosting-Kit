@@ -17,5 +17,6 @@ jobs:
           file: Build.zip
           asset_name: Build.zip
           tag: ${{ github.ref }}
+          release_name: "Stable"
           overwrite: true
           body: "Automatic Release"
