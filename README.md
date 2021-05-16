@@ -10,9 +10,11 @@
 
 ## Building
 ### Connect to internet
-### Download repo and execute Build.bat
-### Open cmd and type:
-### ```build [tor version]```
-### Example:
-### ```build 10.0.16```
-### Or just start the batch file
+### Way 1
+#### Download repo and execute Build.bat
+#### Open cmd and type:
+##### ```build [tor version]```
+#### Example:
+##### ```build 10.0.16```
+### Way 2
+#### Just start the batch file
