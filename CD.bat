@@ -1,6 +1,6 @@
 @echo off
 echo Tor Host Service Builder
-if [%1]==[] (set /p torver=Enter Tor Version:) else (set torver=%1)
+set torver=%1
 del tor.zip
 echo Done
 echo Downloading Tor Release...
