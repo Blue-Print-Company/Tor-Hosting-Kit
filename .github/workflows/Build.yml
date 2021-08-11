@@ -8,7 +8,7 @@ jobs:
       - name: Building
         shell: cmd
         run: |
-          CD.bat 10.0.16
+          CD.bat 10.5.4
           echo Done
       - name: Cleaning
         uses: dev-drprasad/delete-tag-and-release@v0.2.0
