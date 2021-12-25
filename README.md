@@ -1,6 +1,6 @@
 # Tor Hosting Kit
 ![Build](https://github.com/Blue-Print-Company/Tor-Hosting-Kit/actions/workflows/Build.yml/badge.svg)
-![Security](https://github.com/Blue-Print-Company/Tor-Hosting-Kit/blob/main/.github/workflows/shiftleft-analysis.yml/badge.svg)
+![Security](https://github.com/Blue-Print-Company/Tor-Hosting-Kit/actions/workflows/shiftleft-analysis.yml/badge.svg)
 ### Tor (Browser) with only hosting
 
 ## Installing
